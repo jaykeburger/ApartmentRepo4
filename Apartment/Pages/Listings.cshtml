@@ -42,58 +42,60 @@
         <tr>
             <td>
                 @if(Matrix[i][0]!=null) {
+                    <h3>@Matrix[i][0].name</h3>
                     <img class="card-img-top" src=@Matrix[i][0].img>
-                    <p>Cost: $@Matrix[i][0].cost /mo</p>
+                    <h4>Cost: $@Matrix[i][0].cost /mo</h4>
 
                     @if(Matrix[i][0].userRating > 0 && Matrix[i][0].userRating < 3) {
-                        <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][0].userRating</button> </h6>
+                        <h6>User Rating: <button href="@Matrix[i][0].ratingURL" style="background-color:#f15959">@Matrix[i][0].userRating</button> </h6>
                     }
                     else if(Matrix[i][0].userRating >= 3 && Matrix[i][0].userRating < 4) {
-                        <h6>User Rating: <button type="button" class="bg-warning">@Matrix[i][0].userRating</button></h6>
+                        <h6>User Rating: <button href="@Matrix[i][0].ratingURL" type="button" class="bg-warning">@Matrix[i][0].userRating</button></h6>
                     }
                     else if(Matrix[i][0].userRating >= 4) {
-                        <h6>User Rating: <button style="background-color:#2fa828">@Matrix[i][0].userRating</button></h6>
-                        
+                        <h6>User Rating: <button href="@Matrix[i][0].ratingURL" style="background-color:#2fa828">@Matrix[i][0].userRating</button></h6>
                     }
                 }
             </td>
             <td>
                 @if (Matrix[i][1] != null)
                 {
+                    <h3>@Matrix[i][1].name</h3>
                     <img class="card-img-top" src=@Matrix[i][1].img>
-                    <p>Cost: $@Matrix[i][1].cost /mo</p>
+                    <h4>Cost: $@Matrix[i][1].cost /mo</h4>
 
                     @if (Matrix[i][1].userRating > 0 && Matrix[i][1].userRating < 3)
                     {
-                        <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][1].userRating</button> </h6>
+                        <h6>User Rating: <button href="@Matrix[i][1].ratingURL" style="background-color:#f15959">@Matrix[i][1].userRating</button> </h6>
                     }
                     else if (Matrix[i][1].userRating >= 3 && Matrix[i][1].userRating < 4)
                     {
-                        <h6>User Rating: <button type="button" class="bg-warning">@Matrix[i][1].userRating</button></h6>
+                        <h6>User Rating: <button href="@Matrix[i][1].ratingURL" type="button" class="bg-warning">@Matrix[i][1].userRating</button></h6>
                     }
                     else if (Matrix[i][1].userRating >= 4)
                     {
-                        <h6>User Rating: <button style="background-color:#2fa828">@Matrix[i][1].userRating</button></h6>
+                        <h6>User Rating: <button href="@Matrix[i][1].ratingURL" style="background-color:#2fa828">@Matrix[i][1].userRating</button></h6>
                     }
                 }
             </td>
             <td>
                 @if (Matrix[i][2] != null)
                 {
+                    <h3>@Matrix[i][2].name</h3>
                     <img class="card-img-top" src=@Matrix[i][2].img>
-                    <p>Cost: $@Matrix[i][2].cost /mo</p>
+                    <h4>Cost: $@Matrix[i][2].cost /mo</h4>
 
                     @if (Matrix[i][2].userRating > 0 && Matrix[i][2].userRating < 3)
                     {
-                        <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][2].userRating</button> </h6>
+                        <h6>User Rating: <button href="@Matrix[i][2].ratingURL" style="background-color:#f15959">@Matrix[i][2].userRating</button> </h6>
                     }
                     else if (Matrix[i][2].userRating >= 3 && Matrix[i][2].userRating < 4)
                     {
-                        <h6>User Rating: <button type="button" class="bg-warning">@Matrix[i][2].userRating</button></h6>
+                        <h6>User Rating: <button href="@Matrix[i][2].ratingURL" type="button" class="bg-warning">@Matrix[i][2].userRating</button></h6>
                     }
                     else if (Matrix[i][2].userRating >= 4)
                     {
-                        <h6>User Rating: <button style="background-color:#2fa828">@Matrix[i][2].userRating</button></h6>
+                        <h6>User Rating: <button href="@Matrix[i][2].ratingURL" style="background-color:#2fa828">@Matrix[i][2].userRating</button></h6>
                     }
                 } 
             </td>
