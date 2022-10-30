@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\skyline.jpg" />
+  </ItemGroup>
+
 </Project>
