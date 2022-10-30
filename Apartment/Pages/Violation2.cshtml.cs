@@ -8,7 +8,7 @@ namespace Apartment.Pages
         public void OnGet()
         {
         }
-        public string csvFile = "violationsrawcsv.csv";
+        public string csvFile = "C:\\Users\\Jayke\\source\\repos\\ApartmentRepo4\\Apartment\\wwwroot\\smallviolations.csv";
         public string GetHtmlFromCsvFile(string csvFile)
         {
             return GetHtmlFromCsv(System.IO.File.ReadAllLines(csvFile));
@@ -30,7 +30,7 @@ namespace Apartment.Pages
             dataLines.ToList().ForEach(line =>
             {
                 var data = line.Split(",");
-                sb.AppendLine("<<tr>");
+                sb.AppendLine("<tr>");
                 foreach (var column in columns)
                 {
                     sb.AppendLine("<td>" + data[column.ColumnIndex] + "</td>");
