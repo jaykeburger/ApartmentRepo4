@@ -6,4 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Pages\Violation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Violation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Violation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Violation.cshtml" />
+  </ItemGroup>
+
 </Project>
