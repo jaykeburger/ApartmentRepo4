@@ -8,47 +8,92 @@
         Matrix.Add(new List<ApartmentList2>());
     }
 
-    Matrix[0].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1500, 4.2));
-    Matrix[0].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 2500, 2.3));
-    Matrix[0].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 2700, 1.2));
-    Matrix[1].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1520, 4.2));
-    Matrix[1].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 500, 4.3));
-    Matrix[1].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 800, 3.2));
-    Matrix[2].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1520, 4.2));
-    Matrix[2].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 500, 4.3));
-    Matrix[2].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 900, 3.3));
-    Matrix[3].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 3520, 4.9));
-    Matrix[3].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 540, 4.4));
-    Matrix[3].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 880, 3.6));
-    Matrix[4].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1520, 5.2));
-    Matrix[4].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 1600, 4.3));
-    Matrix[4].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 800, 3.7));
-    Matrix[5].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1120, 2.2));
-    Matrix[5].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 570, 3.3));
-    Matrix[5].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 860, 4.2));
+    Matrix[0].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1500, 4.2, "google.com"));
+    Matrix[0].Add(new ApartmentList2("House", "/Pics/testpic_2.jpeg", 2500, 2.3, "google.com"));
+    Matrix[0].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 2700, 1.2, "google.com"));
+    Matrix[1].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1520, 4.2, "google.com"));
+    Matrix[1].Add(new ApartmentList2("House", "/Pics/testpic_2.jpeg", 500, 4.3, "google.com"));
+    Matrix[1].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 800, 3.2, "google.com"));
+    Matrix[2].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1520, 4.2, "google.com"));
+    Matrix[2].Add(new ApartmentList2("House","/Pics/testpic_2.jpeg", 500, 4.3, "google.com"));
+    Matrix[2].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 900, 3.3, "google.com"));
+    Matrix[3].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 3520, 4.9, "google.com"));
+    Matrix[3].Add(new ApartmentList2("House", "/Pics/testpic_2.jpeg", 540, 4.4, "google.com"));
+    Matrix[3].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 880, 3.6, "google.com"));
+    Matrix[4].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1520, 5.2, "google.com"));
+    Matrix[4].Add(null);
+    Matrix[4].Add(null);
+    Matrix[5].Add(null);
+    Matrix[5].Add(null);
+    Matrix[5].Add(null);
 
     int RowSize = Matrix.Count();
     int ColumnSize = 3;
 }
 
-<table>
+<h1>Popular Around Houston</h1>
+
+<table cellpadding="25px">
     @for (int i = 0; i < RowSize; i++)
     {
         <tr>
             <td>
-                <img class="card-img-top" src=@Matrix[i][0].img>
-                <p>Cost: @Matrix[i][0].cost</p>
-                <p>User Rating: @Matrix[i][0].userRating</p>
+                @if(Matrix[i][0]!=null) {
+                    <img class="card-img-top" src=@Matrix[i][0].img>
+                    <p>Cost: @Matrix[i][0].cost</p>
+
+                    @if(Matrix[i][0].userRating > 0 && Matrix[i][0].userRating < 3) {
+                        <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][0].userRating</button> </h6>
+                    }
+                    else if(Matrix[i][0].userRating >= 3 && Matrix[i][0].userRating < 4) {
+                        <h6>User Rating: <button type="button" class="bg-warning">@Matrix[i][0].userRating</button></h6>
+                    }
+                    else if(Matrix[i][0].userRating >= 4) {
+                        <h6>User Rating: <button style="background-color:#2fa828">@Matrix[i][0].userRating</button></h6>
+                        
+                    }
+                }
             </td>
             <td>
-                <img class="card-img-top" src=@Matrix[i][1].img>
-                <p>Cost: @Matrix[i][1].cost</p>
-                <p>User Rating: @Matrix[i][1].userRating</p>
+                @if (Matrix[i][1] != null)
+                {
+                    <img class="card-img-top" src=@Matrix[i][1].img>
+                    <p>Cost: @Matrix[i][1].cost</p>
+
+                    @if (Matrix[i][1].userRating > 0 && Matrix[i][1].userRating < 3)
+                    {
+                        <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][1].userRating</button> </h6>
+                        
+                    }
+                    else if (Matrix[i][1].userRating >= 3 && Matrix[i][1].userRating < 4)
+                    {
+                        <h6>User Rating: <button type="button" class="bg-warning">@Matrix[i][1].userRating</button></h6>
+                    }
+                    else if (Matrix[i][1].userRating >= 4)
+                    {
+                        <h6>User Rating: <button style="background-color:#2fa828">@Matrix[i][1].userRating</button></h6>
+                    }
+                }
             </td>
             <td>
-                <img class="card-img-top" src=@Matrix[i][2].img>
-                <p>Cost: @Matrix[i][2].cost</p>
-                <p>User Rating: @Matrix[i][2].userRating</p>
+                @if (Matrix[i][2] != null)
+                {
+                    <img class="card-img-top" src=@Matrix[i][2].img>
+                    <p>Cost: @Matrix[i][2].cost</p>
+
+                    @if (Matrix[i][2].userRating > 0 && Matrix[i][2].userRating < 3)
+                    {
+                        <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][2].userRating</button> </h6>
+                    }
+                    else if (Matrix[i][2].userRating >= 3 && Matrix[i][2].userRating < 4)
+                    {
+                        <h6>User Rating: <button type="button" class="bg-warning">@Matrix[i][2].userRating</button></h6>
+                    }
+                    else if (Matrix[i][2].userRating >= 4)
+                    {
+                        <h6>User Rating: <button style="background-color:#2fa828">@Matrix[i][2].userRating</button></h6>
+                    }
+                } 
             </td>
         </tr>
     }
