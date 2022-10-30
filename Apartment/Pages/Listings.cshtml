@@ -2,30 +2,33 @@
 @model Apartment.Pages.Index1Model
 
 @{
-    int RowCount = 6; //fix here, = RoundUp(TotalItems / 3)
+    int RowCount = 7;//fix here, = RoundUp(TotalItems / 3)
     List<List<ApartmentList2>> Matrix = new List<List<ApartmentList2>>();
     for(int i = 0; i < RowCount; i++) {
         Matrix.Add(new List<ApartmentList2>());
     }
 
-    Matrix[0].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1500, 4.2, "google.com"));
-    Matrix[0].Add(new ApartmentList2("House", "/Pics/testpic_2.jpeg", 2500, 2.3, "google.com"));
-    Matrix[0].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 2700, 1.2, "google.com"));
-    Matrix[1].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1520, 4.2, "google.com"));
-    Matrix[1].Add(new ApartmentList2("House", "/Pics/testpic_2.jpeg", 500, 4.3, "google.com"));
-    Matrix[1].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 800, 3.2, "google.com"));
-    Matrix[2].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1520, 4.2, "google.com"));
-    Matrix[2].Add(new ApartmentList2("House","/Pics/testpic_2.jpeg", 500, 4.3, "google.com"));
-    Matrix[2].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 900, 3.3, "google.com"));
-    Matrix[3].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 3520, 4.9, "google.com"));
-    Matrix[3].Add(new ApartmentList2("House", "/Pics/testpic_2.jpeg", 540, 4.4, "google.com"));
-    Matrix[3].Add(new ApartmentList2("House", "/Pics/testpic_3.jpeg", 880, 3.6, "google.com"));
-    Matrix[4].Add(new ApartmentList2("House", "/Pics/testpic_1.jpeg", 1520, 5.2, "google.com"));
-    Matrix[4].Add(null);
-    Matrix[4].Add(null);
-    Matrix[5].Add(null);
-    Matrix[5].Add(null);
-    Matrix[5].Add(null);
+    Matrix[0].Add(new ApartmentList2("Campus Vue", "/Campus_Vue.jpg", 1500, 3, "https://www.google.com/search?client=opera-gx&q=Campus+Vue+Apartment+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640be4f84444e69:0x470035c303fae99f,1,,,"));
+    Matrix[0].Add(new ApartmentList2("Tower 5040", "/Pics/testpic_2.jpeg", 2500, 4.1, "https://www.google.com/search?client=opera-gx&q=Campus+Vue+Apartment+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640be4f84444e69:0x470035c303fae99f,1,,,"));
+    Matrix[0].Add(new ApartmentList2("University Lofts", "/Pics/testpic_3.jpeg", 2700, 2.6, "https://www.google.com/search?client=opera-gx&q=university+lofts&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640be597d9217d3:0x43996ca464d94e23,1,,,"));
+    Matrix[1].Add(new ApartmentList2("Jefferson Square", "/Pics/testpic_1.jpeg", 1520, 4.1, "https://www.google.com/search?q=Jefferson+Square+Apartments&client=opera-gx&hs=zHS&sxsrf=ALiCzsZWktdJINaU0mNTgLffbcvJxEgl_w%3A1667118076016&ei=_DNeY4dNmaeq2w_WubuIBw&ved=0ahUKEwiHu-Dlwof7AhWZk2oFHdbcDnEQ4dUDCBA&uact=5&oq=Jefferson+Square+Apartments&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIOCC4QgAQQxwEQrwEQiwMyDgguEIAEEMcBEK8BEIsDMggIABCABBCLAzIOCC4QgAQQxwEQrwEQiwMyDgguEIAEEMcBEK8BEIsDMg4ILhCABBDHARCvARCLAzIOCC4QgAQQxwEQrwEQiwMyDgguEIAEEMcBEK8BEIsDMhQILhCABBDHARCvARCLAxCmAxCoAzoHCCMQ6gIQJ0oECE0YAUoECEEYAEoECEYYAFCCAViCAWCnCWgBcAF4AIABjQGIAY0BkgEDMC4xmAEAoAEBoAECsAEKuAEBwAEB&sclient=gws-wiz-serp#lrd=0x8640be8be98c8933:0xafd532516154cb2,1,,,"));
+    Matrix[1].Add(new ApartmentList2("Allure Hermann Park", "/Pics/testpic_2.jpeg", 500, 4.7, "https://www.google.com/search?client=opera-gx&q=Allure+Herman+Park+Appartments+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf9a7e155555:0x453d569faf9492c5,1,,,"));
+    Matrix[1].Add(new ApartmentList2("Parkside Residences", "/Pics/testpic_2.jpeg", 500, 4.8, "https://www.google.com/search?client=opera-gx&q=Parkside+Residences+Apartments+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bfa2a49f9b59:0x3da7f4690508e922,1,,,"));
+    Matrix[2].Add(new ApartmentList2("Canal Street", "/Pics/testpic_3.jpeg", 800, 3.3, "https://www.google.com/search?client=opera-gx&q=Canal+Street+Flats+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bed9120dd17d:0xbc00884f84967fa1,1,,,"));
+    Matrix[2].Add(new ApartmentList2("Chelsea Museum District", "/Pics/testpic_1.jpeg", 1520, 4.5, "https://www.google.com/search?client=opera-gx&q=Chelsea+Museum+District+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bfd34c077c39:0x2974111b7369b47f,1,,,"));
+    Matrix[2].Add(new ApartmentList2("Vantage Med Center", "/Pics/testpic_2.jpeg", 500, 4.4, "https://www.google.com/search?client=opera-gx&q=Vantage+Med+Center+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf8a546fc88b:0xf23df6aced7fba91,1,,,"));
+    Matrix[3].Add(new ApartmentList2("Country Club Place", "/Pics/testpic_3.jpeg", 900, 3.4, "https://www.google.com/search?client=opera-gx&q=Country+Club+Place+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640be80899d3453:0x5cb2d849cfba7771,1,,,"));
+    Matrix[3].Add(new ApartmentList2("Circuit", "/Pics/testpic_1.jpeg", 3520, 3.6, "https://www.google.com/search?q=circuit+apartment+reviews&client=opera-gx&hs=bzm&sxsrf=ALiCzsa7xpZO2Ut3G8PdL_9l9NTmP0NOqA%3A1667118219275&ei=izReY-GzEKapqtsP3KS2kAk&oq=Circuit&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgQIIxAnMggIABCRAhCLAzITCC4QgAQQhwIQxwEQrwEQFBCLAzIRCC4QgAQQsQMQxwEQrwEQiwMyCwgAEIAEELEDEIsDMhEILhCABBCxAxDHARDRAxCLAzIICAAQgAQQiwMyCAgAEIAEELEDMg0ILhDHARCvARBDEIsDMgsIABCABBCxAxCLAzoHCCMQ6gIQJ0oECEEYAEoECEYYAFD9AVj9AWDBDWgBcAF4AIABYYgBYZIBATGYAQCgAQGgAQKwAQq4AQHAAQE&sclient=gws-wiz-serp#lrd=0x8640bedfc158adc7:0x57ec9d0227aaa681,1,,,"));
+    Matrix[3].Add(new ApartmentList2("The Circle At Hermann Park", "/Pics/testpic_2.jpeg", 540, 3.7, "https://www.google.com/search?q=the+circle+at+hermann+park+reviews&client=opera-gx&hs=Tf7&sxsrf=ALiCzsbJ_JBh1WFehBltQfAoBR2dSdjjDw%3A1667118254122&ei=rjReY_mHB7ikqtsP5PCN8Ac&oq=The+CIrcle+at+Hermann+Park&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgQIIxAnMggIABCABBCLAzIOCC4QgAQQxwEQrwEQiwMyCQgAEBYQHhDJAzIGCAAQFhAeMgYIABAWEB4yAggmOgoIABBHENYEELADOg0IABBHENYEELADEMkDOggIABCSAxCwA0oECEEYAEoECEYYAFCtCFitCGCqFWgBcAF4AIABXYgBXZIBATGYAQCgAQKgAQHIAQm4AQHAAQE&sclient=gws-wiz-serp#lrd=0x8640bf9b1d325f71:0x916ff84242f4808e,1,,,"));
+    Matrix[4].Add(new ApartmentList2("Lucciola Midtown", "/Pics/testpic_3.jpeg", 880, 3.2, "https://www.google.com/search?q=lucciola+midtown+reviews&client=opera-gx&hs=1f7&sxsrf=ALiCzsakJK6gY5i14KFADqXmqBNrUZYJVQ%3A1667118288043&ei=0DReY_yZAvjFqtsPqdixkAg&oq=Lucciola+Midtown&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgQIIxAnMgsILhCABBDHARCvATICCCY6BwgjEOoCECdKBAhBGABKBAhGGABQ1gFY1gFgswtoAXABeACAAV2IAV2SAQExmAEAoAEBoAECsAEKwAEB&sclient=gws-wiz-serp#lrd=0x8640bf71bdb6b755:0xe4431a873f1671f1,1,,,"));
+    Matrix[4].Add(new ApartmentList2("Boone Manor", "/Pics/testpic_1.jpeg", 1520, 4.6, "https://www.google.com/search?client=opera-gx&q=Boone+Manor+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bfae752414a9:0x84330409cba65544,1,,,"));
+    Matrix[4].Add(new ApartmentList2("Hermann Park Lofts", "/Pics/testpic_1.jpeg", 1520, 3.6, "https://www.google.com/search?client=opera-gx&q=Hermann+Park+Lofts+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf91ebc95081:0xd0797fd8ec34d409,1,,,"));
+    Matrix[5].Add(new ApartmentList2("Drewery Place", "/Pics/testpic_1.jpeg", 1520, 3.5, "https://www.google.com/search?client=opera-gx&q=Drewery+Place+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf8d6088ef4d:0x3f859a04f2f15c64,1,,,"));
+    Matrix[5].Add(new ApartmentList2("The Travis", "/Pics/testpic_1.jpeg", 1520, 3.3, "https://www.google.com/search?client=opera-gx&q=The+Travis+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf1beca36dd9:0x3b13420e8af76cd8,1,,,"));
+    Matrix[5].Add(new ApartmentList2("Mid Main", "/Pics/testpic_1.jpeg", 1520, 3.2, "https://www.google.com/search?client=opera-gx&q=Mid+Main+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf6e132a8c25:0xa4682bb7a9fbe394,1,,,"));
+    Matrix[6].Add(new ApartmentList2("Calais Midtown", "/Pics/testpic_1.jpeg", 1520, 4, "https://www.google.com/search?client=opera-gx&q=Calais+Midtown+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf6ed8a87f17:0x62315347d27e0b7,1,,,"));
+    Matrix[6].Add(new ApartmentList2("Virtuo Med Center", "/Pics/testpic_1.jpeg", 1520, 4.3, "https://www.google.com/search?client=opera-gx&q=Virtuo+Med+Center+reviews&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x8640bf982e073081:0x4f30412d90532de6,1,,,"));
+    Matrix[6].Add(null);
 
     int RowSize = Matrix.Count();
     int ColumnSize = 3;
