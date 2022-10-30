@@ -1,0 +1,37 @@
+﻿@page
+@model Apartment.Pages.SearchModel
+@{
+}
+
+<p>Apartment Address</p>
+
+
+<div class="input-group">
+    <div class="form-outline">
+        <input type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+    </div>
+    <button type="button" class="btn btn-primary">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+
+<form>
+    <p>Rent Cost</p>
+    <label for="customRange2" class="form-label">Minimum Cost</label>
+    <input type="range" class="form-range" step="1" min="0" max="10000" id="customRange2">
+
+    <label for="customRange2" class="form-label">Maximum Cost</label>
+    <input type="range" class="form-range" step="1" min="0" max="10000" id="customRange2">
+
+    <label for="customRange2" class="form-label">User Rating</label>
+    <input type="range" class="form-range" step="0.1" min="0" max="5" id="customRange2">
+
+    <label for="customRange2" class="form-label">Violation Rating</label>
+    <input type="range" class="form-range" step="0.1" min="0" max="5" id="customRange2">
+
+    <p>pets allowed?</p>
+    <input type="checkbox" />
+
+    <input type="submit" value="Submit" asp-page-handler="Submit" />
+</form>

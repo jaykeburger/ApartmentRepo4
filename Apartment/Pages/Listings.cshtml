@@ -1,0 +1,182 @@
+﻿@page
+@model Apartment.Pages.Index1Model
+@{
+}
+
+@*<div class="card" style="width: 25rem;">
+    <img class="card-img-top" src="/Pics/testpic_1.jpeg" alt="poop image cap" >
+    <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+
+
+    <img class="card-img-top" src="Pics/testpic_1.jpeg" alt="tot image cap">
+    <div class="card-body">
+        <p class="card-text">sadasdasd quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>*@
+
+@*
+<table style="width:100%">
+    <tr> @*Row 1*@
+        @*
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_1.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+            
+        </td>
+        
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_2.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+            
+            </td>
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_3.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+
+            </td>
+    </tr>
+
+    <tr>
+        @*Row 2
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_1.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+            
+        </td>
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_2.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+
+            
+        </td>
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_3.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+
+            
+        </td>
+    </tr>
+
+    <tr>
+        @*Row 3
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_1.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+            
+        </td>
+        <td>
+            <img class="card-img-top" src="/Pics/testpic_2.jpeg" alt="poop image cap">
+            <div class="card-body">
+                <a href="https://www.w3schools.com/">
+                    <div>
+                        <p class="card-text">Google Rating: "NUMBER"</p>
+                    </div>
+                </a>
+            </div>
+
+            
+        </td>
+
+</table>
+*@
+
+@{
+    List<List<ApartmentList2>> Matrix = new List<List<ApartmentList2>>();
+    Matrix.Add(new List<ApartmentList2>());
+    Matrix.Add(new List<ApartmentList2>());
+    Matrix.Add(new List<ApartmentList2>());
+    Matrix.Add(new List<ApartmentList2>());
+    Matrix.Add(new List<ApartmentList2>());
+    Matrix.Add(new List<ApartmentList2>());
+    Matrix[0].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1500, 4.2));
+    Matrix[0].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 2500, 2.3));
+    Matrix[0].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 2700, 1.2));
+    Matrix[1].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1520, 4.2));
+    Matrix[1].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 500, 4.3));
+    Matrix[1].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 800, 3.2));
+    Matrix[2].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1520, 4.2));
+    Matrix[2].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 500, 4.3));
+    Matrix[2].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 900, 3.3));
+    Matrix[3].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 3520, 4.9));
+    Matrix[3].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 540, 4.4));
+    Matrix[3].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 880, 3.6));
+    Matrix[4].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1520, 5.2));
+    Matrix[4].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 1600, 4.3));
+    Matrix[4].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 800, 3.7));
+    Matrix[5].Add(new ApartmentList2("/Pics/testpic_1.jpeg", 1120, 2.2));
+    Matrix[5].Add(new ApartmentList2("/Pics/testpic_2.jpeg", 570, 3.3));
+    Matrix[5].Add(new ApartmentList2("/Pics/testpic_3.jpeg", 860, 4.2));
+
+    int RowSize = Matrix.Count();
+    int ColumnSize = 3;
+}
+
+<table>
+    <thead>column1</thead>
+    <thead>column2</thead>
+    <thead>column3</thead>
+    @for (int i = 0; i < RowSize; i++)
+    {
+        <tr>
+            <td>
+                <img class="card-img-top" src=@Matrix[i][0].img>
+                <p>Cost: @Matrix[i][0].cost</p>
+                <p>User Rating: @Matrix[i][0].userRating</p>
+            </td>
+            <td>
+                <img class="card-img-top" src=@Matrix[i][1].img>
+                <p>Cost: @Matrix[i][1].cost</p>
+                <p>User Rating: @Matrix[i][1].userRating</p>
+            </td>
+            <td>
+                <img class="card-img-top" src=@Matrix[i][2].img>
+                <p>Cost: @Matrix[i][2].cost</p>
+                <p>User Rating: @Matrix[i][2].userRating</p>
+            </td>
+        </tr>
+    }
+</table>

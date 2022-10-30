@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="11" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="12" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="13" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="14" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="15" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="16" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="17" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="18" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="19" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="20" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="21" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="22" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="23" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="24" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="25" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="26" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="27" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="28" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="29" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="30" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="31" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="32" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="33" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="34" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="35" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="36" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="37" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="38" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="39" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="40" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="41" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="42" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="43" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="44" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="45" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="46" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="47" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="48" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="49" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="50" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="51" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="52" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">three65_Case_Number</Data></Cell>
+			<Cell><Data ss:Type="String">Case_Number</Data></Cell>
+			<Cell><Data ss:Type="String">Incident_Address</Data></Cell>
+			<Cell><Data ss:Type="String">Latitude</Data></Cell>
+			<Cell><Data ss:Type="String">Longitude</Data></Cell>
+			<Cell><Data ss:Type="String">Status</Data></Cell>
+			<Cell><Data ss:Type="String">Created_Date_Local</Data></Cell>
+			<Cell><Data ss:Type="String">Closed_Date</Data></Cell>
+			<Cell><Data ss:Type="String">Title</Data></Cell>
+			<Cell><Data ss:Type="String">Incident_Case_Type</Data></Cell>
+			<Cell><Data ss:Type="String">SLA_Time</Data></Cell>
+			<Cell><Data ss:Type="String">Resolve_By_Time</Data></Cell>
+			<Cell><Data ss:Type="String">Service_Area</Data></Cell>
+			<Cell><Data ss:Type="String">Council_District</Data></Cell>
+			<Cell><Data ss:Type="String">Key_Map</Data></Cell>
+			<Cell><Data ss:Type="String">Department</Data></Cell>
+			<Cell><Data ss:Type="String">Division</Data></Cell>
+			<Cell><Data ss:Type="String">AVA_Case_Type</Data></Cell>
+			<Cell><Data ss:Type="String">State_Code</Data></Cell>
+			<Cell><Data ss:Type="String">State_Code_Name</Data></Cell>
+			<Cell><Data ss:Type="String">SLA_Start_Time</Data></Cell>
+			<Cell><Data ss:Type="String">X</Data></Cell>
+			<Cell><Data ss:Type="String">Y</Data></Cell>
+			<Cell><Data ss:Type="String">Incident_Street</Data></Cell>
+			<Cell><Data ss:Type="String">Incident_City</Data></Cell>
+			<Cell><Data ss:Type="String">Incident_State</Data></Cell>
+			<Cell><Data ss:Type="String">Zip_Code</Data></Cell>
+			<Cell><Data ss:Type="String">TaxID</Data></Cell>
+			<Cell><Data ss:Type="String">Created_Date_UTC</Data></Cell>
+			<Cell><Data ss:Type="String">Agent_Name</Data></Cell>
+			<Cell><Data ss:Type="String">Customer_SuperNeighborhood</Data></Cell>
+			<Cell><Data ss:Type="String">Management_District</Data></Cell>
+			<Cell><Data ss:Type="String">Garbage_Route</Data></Cell>
+			<Cell><Data ss:Type="String">Garbage_Day</Data></Cell>
+			<Cell><Data ss:Type="String">SWM_Quadrant</Data></Cell>
+			<Cell><Data ss:Type="String">Recycling_Route</Data></Cell>
+			<Cell><Data ss:Type="String">Recycling_Day</Data></Cell>
+			<Cell><Data ss:Type="String">Recycling_Quadrant</Data></Cell>
+			<Cell><Data ss:Type="String">Recycling_Areas</Data></Cell>
+			<Cell><Data ss:Type="String">Heavy_Trash_Day</Data></Cell>
+			<Cell><Data ss:Type="String">Heavy_Trash_Quadrant</Data></Cell>
+			<Cell><Data ss:Type="String">Queue</Data></Cell>
+			<Cell><Data ss:Type="String">ETJ</Data></Cell>
+			<Cell><Data ss:Type="String">SLA_Name</Data></Cell>
+			<Cell><Data ss:Type="String">Channel</Data></Cell>
+			<Cell><Data ss:Type="String">Extract_Date</Data></Cell>
+			<Cell><Data ss:Type="String">Latest_Case_Notes</Data></Cell>
+			<Cell><Data ss:Type="String">Sample_Case_Confilcts_Notes</Data></Cell>
+			<Cell><Data ss:Type="String">Note_Created_By</Data></Cell>
+			<Cell><Data ss:Type="String">Note_Modified_By</Data></Cell>
+			<Cell><Data ss:Type="String">Description</Data></Cell>
+			<Cell><Data ss:Type="String">Resolution_Notes</Data></Cell>
+		</Row>
+	</Table>
+</Worksheet>
+</Workbook>
