@@ -1,24 +1,16 @@
 ﻿@page
 @model Apartment.Pages.SearchModel
 @{
+    SearchModel smodel = new SearchModel(0);
+    static void SetMinCost(int x) {
+       // smodel.MinCost = x;
+    }
 }
 
-<p>Apartment Address</p>
-
-
-<div class="input-group">
-    <div class="form-outline">
-        <input type="search" id="form1" class="form-control" />
-        <label class="form-label" for="form1">Search</label>
-    </div>
-    <button type="button" class="btn btn-primary">
-        <i class="fas fa-search"></i>
-    </button>
-</div>
 
 <form>
-    <p>Rent Cost</p>
-    <label for="customRange2" class="form-label">Minimum Cost</label>
+    <h1>Filter</h1>
+    <label for="customRange2" class="form-label">Minimum Cost</label> 
     <input type="range" class="form-range" step="1" min="0" max="10000" id="customRange2">
 
     <label for="customRange2" class="form-label">Maximum Cost</label>

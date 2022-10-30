@@ -3,15 +3,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Apartment.Pages
 {
-    public class SearchModel : PageModel
+    public class SearchModel
     {
-        double Rating;
-        int MinCost;
-        int MaxCost;
-        bool HasViolations;
-        int Zipcode;
-        bool PetsAllowed;
-        int b;
+        public double Rating;
+        public int MinCost;
+        public int MaxCost;
+        public bool HasViolations;
+        public int Zipcode;
+        public bool PetsAllowed;
+        public int b;
+
+        public SearchModel(int _MinCost)
+        {
+            MinCost = _MinCost;
+        }
 
         public void OnGet()
         {

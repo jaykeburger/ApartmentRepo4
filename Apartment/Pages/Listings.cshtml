@@ -40,7 +40,7 @@
             <td>
                 @if(Matrix[i][0]!=null) {
                     <img class="card-img-top" src=@Matrix[i][0].img>
-                    <p>Cost: @Matrix[i][0].cost</p>
+                    <p>Cost: $@Matrix[i][0].cost /mo</p>
 
                     @if(Matrix[i][0].userRating > 0 && Matrix[i][0].userRating < 3) {
                         <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][0].userRating</button> </h6>
@@ -58,12 +58,11 @@
                 @if (Matrix[i][1] != null)
                 {
                     <img class="card-img-top" src=@Matrix[i][1].img>
-                    <p>Cost: @Matrix[i][1].cost</p>
+                    <p>Cost: $@Matrix[i][1].cost /mo</p>
 
                     @if (Matrix[i][1].userRating > 0 && Matrix[i][1].userRating < 3)
                     {
                         <h6>User Rating: <button style="background-color:#f15959">@Matrix[i][1].userRating</button> </h6>
-                        
                     }
                     else if (Matrix[i][1].userRating >= 3 && Matrix[i][1].userRating < 4)
                     {
@@ -79,7 +78,7 @@
                 @if (Matrix[i][2] != null)
                 {
                     <img class="card-img-top" src=@Matrix[i][2].img>
-                    <p>Cost: @Matrix[i][2].cost</p>
+                    <p>Cost: $@Matrix[i][2].cost /mo</p>
 
                     @if (Matrix[i][2].userRating > 0 && Matrix[i][2].userRating < 3)
                     {
